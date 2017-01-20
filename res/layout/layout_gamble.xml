@@ -54,6 +54,14 @@
             android:text="다음"/>
     </LinearLayout>
 
+    <TextView
+        android:text="목차"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+    
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
