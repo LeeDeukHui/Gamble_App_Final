@@ -25,10 +25,18 @@ public class MainActivity extends AppCompatActivity {
     public void gamble_Click(View v) {
         Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kcgp.or.kr"));
         startActivity(myIntent);
-    }
+    }//도박관리센터 배너 클릭
 
     public void cu2_Click(View v) {
         Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.cu.ac.kr"));
         startActivity(myIntent);
     }//학교 배너 클릭(사업단배너)
+    public void childBTN_Click(View v){
+        Intent intent = new Intent(getApplicationContext(), GambleActivity.class);
+        startActivity(intent);
+    }//청소년 버튼 클릭 -> 도박 설명으로 이동
+    public void adultBTN_Click(View v){
+        Intent intent = new Intent(getApplicationContext(), GambleActivity.class);
+        startActivity(intent);
+    }//성인 버튼 클릭 -> 도박 설명으로 이동
 }

@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity" android:label="도박 중독 앱"></activity>
-        
+        <activity android:name=".MainActivity" android:label="메인화면"></activity>
+        <activity android:name=".GambleActivity" android:label="도박설명화면"></activity>
     </application>
 
 </manifest>

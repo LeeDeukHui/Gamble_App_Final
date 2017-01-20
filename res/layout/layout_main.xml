@@ -26,10 +26,10 @@
             <Button
                 android:id="@+id/gambleButton"
                 android:layout_weight="1"
-        android:background="@drawable/gamble_img"
-        android:onClick="gamble_Click"
-        android:layout_width="120dp"
-        android:layout_height="50dp" />
+                android:background="@drawable/gamble_img"
+                android:onClick="gamble_Click"
+                android:layout_width="120dp"
+                android:layout_height="50dp" />
 
         <Button
             android:id="@+id/cu2Button"
@@ -51,24 +51,26 @@
             android:layout_height="wrap_content"
             android:text="시작하기"
             android:textAlignment="center"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:layout_weight="1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="2">
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="성인"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:onClick="adultBTN_Click"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="청소년"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:onClick="childBTN_Click"/>
         </LinearLayout>
 
         <TextView
@@ -101,10 +103,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="사례소개"/>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="자가진단"/>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
