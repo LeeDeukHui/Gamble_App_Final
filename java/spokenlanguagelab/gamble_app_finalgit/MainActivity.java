@@ -33,10 +33,12 @@ public class MainActivity extends AppCompatActivity {
     }//학교 배너 클릭(사업단배너)
     public void childBTN_Click(View v){
         Intent intent = new Intent(getApplicationContext(), GambleActivity.class);
+        intent.putExtra("Type", "child");
         startActivity(intent);
     }//청소년 버튼 클릭 -> 도박 설명으로 이동
     public void adultBTN_Click(View v){
         Intent intent = new Intent(getApplicationContext(), GambleActivity.class);
+        intent.putExtra("Type", "adult");
         startActivity(intent);
     }//성인 버튼 클릭 -> 도박 설명으로 이동
 }
