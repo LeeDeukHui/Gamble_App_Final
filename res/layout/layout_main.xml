@@ -10,36 +10,37 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-        <LinearLayout
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/cuButton"
+                    android:background="@drawable/cu_img"
+                    android:onClick="cu_Click"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
 
-            <Button
-                android:id="@+id/cuButton"
-                android:background="@drawable/cu_img"
-                android:onClick="cu_Click"
-                android:layout_weight="1"
-                android:layout_width="120dp"
-                android:layout_height="50dp" />
+                <Button
+                    android:id="@+id/gambleButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/gamble_img"
+                    android:onClick="gamble_Click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
 
-            <Button
-                android:id="@+id/gambleButton"
-                android:layout_weight="1"
-                android:background="@drawable/gamble_img"
-                android:onClick="gamble_Click"
-                android:layout_width="120dp"
-                android:layout_height="50dp" />
-
-        <Button
-            android:id="@+id/cu2Button"
-            android:layout_width="120dp"
-            android:layout_weight="1"
-            android:background="@drawable/cu_img"
-            android:onClick="cu2_Click"
-            android:layout_height="50dp" />
-
-    </LinearLayout>
+                <Button
+                    android:id="@+id/cu2Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/cu_img"
+                    android:onClick="cu2_Click"/>
+            </LinearLayout>
+        </HorizontalScrollView>
 
         <ImageView
             android:layout_width="match_parent"
