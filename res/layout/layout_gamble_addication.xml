@@ -33,6 +33,8 @@
         android:layout_weight="3">
 
         <TextView
+            android:id="@+id/gambleAddicationText"
+            android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="320dp" />
     </LinearLayout>
