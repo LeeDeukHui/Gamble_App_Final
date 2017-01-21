@@ -19,7 +19,8 @@
         <activity android:name=".MainActivity" android:label="메인화면"></activity>
         <activity android:name=".GambleActivity" android:label="도박설명화면"></activity>
         <activity android:name=".GambleAddicationActivity" android:label="도박중독설명화면"></activity>
-        <activity android:name=".SelfTestActivity" android:label="자가진단"></activity>
+        <activity android:name=".SelfTestActivityAdult" android:label="자가진단(성인)"></activity>
+        <activity android:name=".SelfTestActivityChild" android:label="자가진단(청소년)"></activity>
         <activity android:name=".CaseIntroductionActivity" android:label="사례소개"></activity>
         <activity android:name=".CenterGuideActivity" android:label="센터안내"></activity>
     </application>

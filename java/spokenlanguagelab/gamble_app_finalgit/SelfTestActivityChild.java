@@ -7,10 +7,10 @@ import android.support.v7.app.AppCompatActivity;
  * Created by big94 on 2017-01-21.
  */
 
-public class SelfTestActivity extends AppCompatActivity {
+public class SelfTestActivityChild extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_selftest);
+        setContentView(R.layout.layout_selftest_child);
     }
 }
