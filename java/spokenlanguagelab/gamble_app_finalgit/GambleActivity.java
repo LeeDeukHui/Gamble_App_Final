@@ -34,12 +34,12 @@ public class GambleActivity extends AppCompatActivity{
         }
     }
 
-    public void getIntentData(){
+    public void getIntentData(){        //이전 인텐트에 저장된 값 읽어오기
         prevIntent = getIntent();
         type = prevIntent.getStringExtra("Type");
     }
 
-    private String readText(int type){
+    private String readText(int type){      //텍스트파일 읽어오는 함수
         String data = null;
         InputStream inputStream = null;
         if(type == 1) {

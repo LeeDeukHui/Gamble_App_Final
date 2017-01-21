@@ -36,13 +36,13 @@ public class GambleAddicationActivity extends AppCompatActivity{
         type = prevIntent.getStringExtra("Type");
     }
 
-    private String readText(int type){
+    private String readText(int type){      //텍스트 파일 읽어오는 함수. type은 onCreate에서 readText를 호출할때 사용한 매개변수
         String data = null;
         InputStream inputStream = null;
-        if(type == 1) {
+        if(type == 1) {         //성인의 경우에 텍스트파일 읽기
             inputStream = getResources().openRawResource(R.raw.gamble_addication_adult);
         }
-        else if(type == 2){
+        else if(type == 2){     //청소년의 경우에 텍스트파일 읽기
             inputStream = getResources().openRawResource(R.raw.gamble_addication_child);
         }
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -61,6 +61,7 @@ public class GambleAddicationActivity extends AppCompatActivity{
         }
         return data;
     }
+
     public void prevBTN_Click(View v){
         finish();
     }
