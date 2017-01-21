@@ -60,6 +60,9 @@ public class GambleActivity extends AppCompatActivity{
     }
     public void nextBTN_Click(View v){
         Intent intent = new Intent(getApplicationContext(), GambleAddicationActivity.class);
-        startActivity(intent);
+        Intent prevIntent = getIntent();
+        String type = prevIntent.getStringExtra("Type");        //선택한 성인, 청소년 버튼 값을 읽어옴
+        intent.putExtra("Type", type);                          //버튼 값을 인텐트에 저장
+        startActivity(intent);                                  //인텐트 수행
     }
 }
