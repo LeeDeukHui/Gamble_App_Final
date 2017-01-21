@@ -15,15 +15,15 @@ import java.io.InputStream;
  */
 
 public class GambleAddicationActivity extends AppCompatActivity{
+    private Intent prevIntent;
+    private String type;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_gamble_addication);
 
-        Intent intent = getIntent();
         TextView gambleText = (TextView)findViewById(R.id.gambleAddicationText);
-
-        String type = intent.getStringExtra("Type");
+        getIntentData();            //인텐트 데이터 불러오는 함수
         if(type.equals("adult")){
             gambleText.setText(readText(1));
         }
@@ -31,6 +31,11 @@ public class GambleAddicationActivity extends AppCompatActivity{
             gambleText.setText(readText(2));
         }
     }
+    public void getIntentData(){
+        prevIntent = getIntent();
+        type = prevIntent.getStringExtra("Type");
+    }
+
     private String readText(int type){
         String data = null;
         InputStream inputStream = null;
@@ -60,6 +65,7 @@ public class GambleAddicationActivity extends AppCompatActivity{
         finish();
     }
     public void nextBTN_Click(View v){
-
+        Intent intent = new Intent(getApplicationContext(), SelfTestActivityAdult.class);
+        startActivity(intent);
     }
 }

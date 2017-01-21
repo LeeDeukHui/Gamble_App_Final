@@ -15,14 +15,17 @@ import java.io.InputStream;
  */
 
 public class GambleActivity extends AppCompatActivity{
+    private Intent prevIntent;
+    private String type;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_gamble);
-
-        Intent intent = getIntent();
         TextView gambleText = (TextView)findViewById(R.id.gambleText);
-        String type = intent.getStringExtra("Type");
+
+        getIntentData();
+
         if(type.equals("adult")){
             gambleText.setText(readText(1));
         }
@@ -30,6 +33,12 @@ public class GambleActivity extends AppCompatActivity{
             gambleText.setText(readText(2));
         }
     }
+
+    public void getIntentData(){
+        prevIntent = getIntent();
+        type = prevIntent.getStringExtra("Type");
+    }
+
     private String readText(int type){
         String data = null;
         InputStream inputStream = null;
@@ -60,8 +69,6 @@ public class GambleActivity extends AppCompatActivity{
     }
     public void nextBTN_Click(View v){
         Intent intent = new Intent(getApplicationContext(), GambleAddicationActivity.class);
-        Intent prevIntent = getIntent();
-        String type = prevIntent.getStringExtra("Type");        //선택한 성인, 청소년 버튼 값을 읽어옴
         intent.putExtra("Type", type);                          //버튼 값을 인텐트에 저장
         startActivity(intent);                                  //인텐트 수행
     }
