@@ -2,7 +2,6 @@ package spokenlanguagelab.gamble_app_finalgit;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.renderscript.ScriptGroup;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
