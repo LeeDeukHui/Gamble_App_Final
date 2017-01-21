@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,9 +14,11 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <Button
                     android:id="@+id/cuButton"
                     android:background="@drawable/cu_img"
@@ -39,6 +42,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/cu_img"
                     android:onClick="cu2_Click"/>
+
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -46,7 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/cu"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:layout_margin = "30dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
