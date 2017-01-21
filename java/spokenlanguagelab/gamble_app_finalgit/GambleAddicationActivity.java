@@ -10,6 +10,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import static spokenlanguagelab.gamble_app_finalgit.MainActivity.activityStackList;
+
 /**
  * Created by Lee Je-ho on 2017-01-20.
  */
@@ -19,6 +21,7 @@ public class GambleAddicationActivity extends AppCompatActivity{
     private String type;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        activityStackList.add(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_gamble_addication);
 

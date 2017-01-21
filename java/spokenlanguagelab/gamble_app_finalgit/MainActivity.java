@@ -1,18 +1,24 @@
 package spokenlanguagelab.gamble_app_finalgit;
 
+import android.app.Activity;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 
+import java.util.ArrayList;
+
 /**
  * Created by Lee Je-ho on 2017-01-19.
  */
 
 public class MainActivity extends AppCompatActivity {
+    public static ArrayList<Activity> activityStackList = new ArrayList<Activity>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        activityStackList.add(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_main);
     }

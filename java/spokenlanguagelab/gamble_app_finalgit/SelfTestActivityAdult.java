@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import static spokenlanguagelab.gamble_app_finalgit.MainActivity.activityStackList;
+
 /**
  * Created by big94 on 2017-01-21.
  */
@@ -12,6 +14,7 @@ import android.view.View;
 public class SelfTestActivityAdult extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        activityStackList.add(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_selftest_adult);
     }
