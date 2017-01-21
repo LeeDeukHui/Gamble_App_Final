@@ -31,7 +31,7 @@ public class GambleAddicationActivity extends AppCompatActivity{
             gambleText.setText(readText(2));
         }
     }
-    public void getIntentData(){
+    public void getIntentData(){        //이전 인텐트로부터 값 입력받아오기.
         prevIntent = getIntent();
         type = prevIntent.getStringExtra("Type");
     }
@@ -65,7 +65,13 @@ public class GambleAddicationActivity extends AppCompatActivity{
         finish();
     }
     public void nextBTN_Click(View v){
-        Intent intent = new Intent(getApplicationContext(), SelfTestActivityAdult.class);
-        startActivity(intent);
+        if(type.equals("adult")) {      //성인이면 성인 자가진단화면
+            Intent intent = new Intent(getApplicationContext(), SelfTestActivityAdult.class);
+            startActivity(intent);
+        }
+        else if(type.equals("child")){  //청소년이면 청소년 자가진단화면
+            Intent intent = new Intent(getApplicationContext(), SelfTestActivityChild.class);
+            startActivity(intent);
+        }
     }
 }
