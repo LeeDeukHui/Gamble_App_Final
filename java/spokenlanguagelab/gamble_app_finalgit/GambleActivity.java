@@ -20,7 +20,7 @@ public class GambleActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);//
         setContentView(R.layout.layout_gamble);
         TextView gambleText = (TextView)findViewById(R.id.gambleText);
 
