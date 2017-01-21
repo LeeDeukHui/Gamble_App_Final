@@ -22,7 +22,7 @@ public class GambleActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        activityStackList.add(this);
+        activityStackList.add(this);//jj
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_gamble);
 
