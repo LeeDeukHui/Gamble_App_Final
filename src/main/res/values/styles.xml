@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+    </style>
+    <style name="Button_style" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/SkyBlue</item>
+        <item name="colorButtonNormal">@color/LightSkyBlue</item>
+    </style>
+    <style name="MyActionBar" parent="android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+
+        <item name="android:background">#ff33b5e5</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.orangefit.test">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cu"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:label="도박중독 예방 어플리케이션"></activity>
+        <activity android:name=".GambleActivity" android:label="도박설명화면"></activity>
+        <activity android:name=".sub_menu_1_operation" android:label="도박이란?"></activity>
+        <activity android:name=".menu_4_operation" android:label="자가진단"></activity>
+        <activity android:name=".sub_menu_4_operation" android:label="자가진단 문항"></activity>
+        <activity android:name=".menu_4_result" android:label="자가진단 결과"></activity>
+    </application>
+
+</manifest>
