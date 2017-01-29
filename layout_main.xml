@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:columnCount="2"
+    >
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            >
+
+            <ViewFlipper
+                android:id = "@+id/flipper"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="0,1,2">
+
+                <Button
+                    android:layout_margin="20px"
+                    android:id="@+id/cuButton"
+                    android:onClick="cu_Click"
+                    android:background="@drawable/cu_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:layout_margin="20px"
+                    android:id="@+id/gambleButton"
+                    android:background="@drawable/gamble_img"
+                    android:onClick="gamble_Click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:layout_margin="20px"
+                    android:id="@+id/cu2Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cu_img"
+                    android:onClick="cu2_Click"/>
+
+            </ViewFlipper>
+        </GridLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cu"
+            android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="시작"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="20px"
+            android:textSize="100px"
+            android:onClick="start_Click"
+            android:padding = "100px"
+            android:id="@+id/start_button"
+            android:layout_weight="1"
+            android:theme = "@style/Button_style"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="청소년"
+            android:textSize="70px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="20px"
+            android:onClick="childBTN_Click"
+            android:padding = "70px"
+            android:background="@color/LightSteelBlue"
+            android:id = "@+id/teen_button"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="성인"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="40px"
+            android:textSize="70px"
+            android:padding = "100px"
+            android:background="@color/Pink"
+            android:onClick="adultBTN_Click"
+            android:id = "@+id/adult_button"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="Made by ORANGEFIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

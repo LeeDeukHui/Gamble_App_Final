@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/sub_menu_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="20px"
+            android:onClick="sub_menu_1"
+            android:background="@color/DarkTurquoise"
+            android:text="도박이란?"
+            android:textSize="85px"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/sub_menu_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/DarkTurquoise"
+            android:text="도박중독이란?"
+            android:textSize="85px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="20px"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sub_menu_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Turquoise"
+        android:drawableLeft="@drawable/example"
+        android:text="사례소개"
+        android:textSize="85px"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/sub_menu_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/LightSkyBlue"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:drawableLeft="@drawable/self_check"
+        android:text="자가진단"
+        android:textSize="85px"
+        android:layout_weight="1"
+        android:layout_marginRight="40px"
+        android:layout_marginLeft="40px"
+        android:onClick="sub_menu_4"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/sub_menu_5"
+            android:layout_marginTop="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="40px"
+            android:layout_marginBottom="40px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Orange"
+            android:drawableTop="@drawable/office_info"
+            android:text="센터안내"
+            android:textSize="85px"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/sub_menu_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/LightSteelBlue"
+            android:drawableTop="@drawable/home"
+            android:onClick="Home"
+            android:text="홈으로"
+            android:textSize="85px"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="40px"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
